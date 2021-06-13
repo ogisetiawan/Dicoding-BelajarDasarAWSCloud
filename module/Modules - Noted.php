@@ -135,10 +135,12 @@
 /// -------------------------------------------------------------------------------------------------------------------------------
 
 //@ Infrastruktur Global dan Keandalan
+//! Pengantar Infrasturktur Global dan Kendalaan
 //? Kebutuhan : Aplikasi yang harus berjalan, Konten yang disimpan, Data yang perlu dianalisa
 //# misal ketika terputus koneksi ke data center, atau ada bencana lainya, maka bisnis akan terhambat
 //? di AWS terdapat AWS Region
 
+//! Insrasturktur Global AWS
 //~ AWS Region
 //? AWS membangun data center di berbagai kota di dunia. setiap region saling terhubung dengan jaringan fiber berkecepatan tinggi
 //? 4 faktor bisini dalam pemilihan AWS region:
@@ -151,7 +153,7 @@
 //? satu atau beberapa data center terpisah dengan daya, jaringan, dan konektivitasnya sendiri-sendiri
 //# membangun data center di suatu region tidak lah baik, maka AWS memiliki sekolompok data enter yang saling sync.
 
-//~ Edge Localtion
+//! Edge Localtion
 //? teknik untuk menyimpan salinan data di cache dengan lokasi yang lebih dekat dgn suatu proses permintaan (CDN)
 //? CDN di AWS disebut Amazon CloudFont layanan yang membantu proses pengiriman data lebih cepat.
 
@@ -171,3 +173,47 @@
 
 //~ AWS CloudFormation
 //? layanan otomatis dan berulang, dengan cara konfigurasi berbasis JSON/YAML (cloudformation template)
+
+/// -------------------------------------------------------------------------------------------------------------------------------
+
+//@ JARINGAN
+//! Pengantar Jaringan
+//# misal dalam suatu permintaan langsung ke instance B tanpa melewati instance A, 
+//# maka membuat suatu instance menjadi publik untuk instance A dan private untuk instace B (hanya diakases oleh req instance A)
+
+//! Konektivitas ke AWS
+//~ Amazon Virtual Private Cloud (VPC)
+//? jaringan pribadi pada AWS, yang terisolasi dengan menggunakan subnet yang berbeda.
+
+//~ Internet Gateway
+//? mengijinkan traffic dari internet public mengalir masuk kedalam VPC. menghubungkan VPC ke internet?
+
+//~ Virtual Private Gateway
+//? mengijinkan suatu permintaan masuk jika berasal dari jaringan yang disetujui
+
+//~ AWS Direct Connect
+//? suatu koneksi kusus yang dirancang dengan keaman yang dengan tingkat tinggi.
+//? koneksi yang privat dan terdedikasi antara data center perusahaan Anda dan AWS/
+
+//! Subnet dan Network Access Control List
+//~ Subnet
+//? bagian dari VPC (Virtual Private Cloud) yang dpt menjadi publik atau private
+//? keduanya bisa saling terhubung, misal subnet publik adlah website toko online dan subnet private untuk databasenya.
+
+//~ Network Access Control List (Network ACL)
+//? proses indentifikasi suatu permintaan yang keluar ataupun masuk (contoh petugas passport )
+
+//~ Security Group
+//? firewall virtual yang mengontrol/mengijinkan traffic masuk dan keluar untuk Amazon EC2 instance. beda dengan ACL menggunakan subnet 
+//? contoh petugas gedung / security
+
+//# contoh kita memiliki 2 instance A dan B
+//# setiap instance memiliki security group dan ACL
+//# jika kita mengirimkan data/paket ke instance B dari instance A
+//# maka kita prosesnya paket diperiksa dulu di instance A untuk keluar melalui securty group dan diperksa oleh ACL
+//# setelah ingin masuk ke instance B data/paket diperksa kembali oleh ACL yang dimiliki instance B selnjutnya akan diperiksa lagi
+//# oleh security group instance B apakah data/paket tersebut diijinkan masuk
+
+//~ Jaringan Global
+//? Amazon Route 53 ; layanan DNS yang merutekan pelanggan ke apliksi internet yang ada di AWS anda.
+//? Amazon CloudFront : layanan CDN yang dimuat oleh cahce dengan lokasi paling dekat dari suatu permintaan
