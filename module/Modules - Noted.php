@@ -3,7 +3,7 @@
  * @Author: ogi.setiawan 
  * @Date: 2021-06-12 21:26:07 
  * @Last Modified by: ogi.setiawan
- * @Last Modified time: 2021-06-12 21:30:23
+ * @Last Modified time: 2021-06-12 21:52:22
  */
 
 //@ PENGANTAR AMAZON WEB SERVICE
@@ -30,6 +30,8 @@
 //? Manfaatkan skala ekonomi yang masif
 //? Tingkatkan kecepatan dan ketangkasan
 //? Mendunia dalam hitungan menit
+
+/// -------------------------------------------------------------------------------------------------------------------------------
 
 //@ KOMPUTASI DI CLOUD
 //~ Amazon Elastic Compute Cloud ( Amazon EC2 )
@@ -129,3 +131,43 @@
 //? Setelah memilih alat orkestrasinya, kemudian Anda perlu menentukan platformnya. 
 //? Anda dapat menjalankan container pada EC2 instance yang Anda kelola sendiri 
 //? atau dalam lingkungan serverless seperti AWS Fargate yang dikelola oleh AWS.
+
+/// -------------------------------------------------------------------------------------------------------------------------------
+
+//@ Infrastruktur Global dan Keandalan
+//? Kebutuhan : Aplikasi yang harus berjalan, Konten yang disimpan, Data yang perlu dianalisa
+//# misal ketika terputus koneksi ke data center, atau ada bencana lainya, maka bisnis akan terhambat
+//? di AWS terdapat AWS Region
+
+//~ AWS Region
+//? AWS membangun data center di berbagai kota di dunia. setiap region saling terhubung dengan jaringan fiber berkecepatan tinggi
+//? 4 faktor bisini dalam pemilihan AWS region:
+//? Compilience (kepatuhan): pemilihan region berdasakran suatu autran dari pemerintah 
+//? Proximitly (kedekatan): pemilihan region pada suatu region yang berbeda (misal kita di indonesia, sedangkan konsumen di singapur, artinaya pilih reg. singapur)
+//? Feature Availability (Ketersediaan Fitur: tidak semua AWS setiap region tidak memiliki fitur lengkap
+//? Price : setiap AWS region memiliki harga yang berbeda
+
+//~ Availability Zone
+//? satu atau beberapa data center terpisah dengan daya, jaringan, dan konektivitasnya sendiri-sendiri
+//# membangun data center di suatu region tidak lah baik, maka AWS memiliki sekolompok data enter yang saling sync.
+
+//~ Edge Localtion
+//? teknik untuk menyimpan salinan data di cache dengan lokasi yang lebih dekat dgn suatu proses permintaan (CDN)
+//? CDN di AWS disebut Amazon CloudFont layanan yang membantu proses pengiriman data lebih cepat.
+
+//! Cara menyediakan Sumber Daya AWS
+//~ AWS Management Console
+//? antarmuka berbasis browser yang dapat menglola layanan AWS lainya.
+//? seperti mencari layanan AWS dari nama, kata kunci dll, membangun lingkungan pengujian, melakukan pantuan, dll
+
+//~ AWS Command Line Interface
+//? CLI yang bertujuan untuk meminimalisir dari suatu kesalah UI, klo pakai CLI biasanya kita tidak mungkin sengaja!
+
+//~ AWS Software Development Kit (SDK)
+//? layanan yang bisa interaksi dengan bahasa pemrograman (C++,GO,Java,PHP dll)
+
+//~ AWS Elastik Beanstalk
+//? layanan yang terkelola (manager service), Cukup unggah kode dan tentukan konfigurasi yang Anda inginkan,
+
+//~ AWS CloudFormation
+//? layanan otomatis dan berulang, dengan cara konfigurasi berbasis JSON/YAML (cloudformation template)
