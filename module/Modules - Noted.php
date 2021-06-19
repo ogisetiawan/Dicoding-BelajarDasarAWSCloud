@@ -217,3 +217,61 @@
 //~ Jaringan Global
 //? Amazon Route 53 ; layanan DNS yang merutekan pelanggan ke apliksi internet yang ada di AWS anda.
 //? Amazon CloudFront : layanan CDN yang dimuat oleh cahce dengan lokasi paling dekat dari suatu permintaan
+
+/// -------------------------------------------------------------------------------------------------------------------------------
+
+//@ PENYIMPANAN DAN DATABASE
+//! Instance Store dan Amazon Elastic Block Store (Amazon EBS)
+//? Instance store : tempat penyimpanan storage sementara pasa Amazon EC2 Instance
+//# cara kerja ketika instance storage djalan degan EC2 Instance maka ketika mati data tidak disimpan
+
+//~ Amazon Elastic Block Store (Amazon EBS)
+//? layanan yang menyediakan bock-level storage. yang dapat menyimpan data secara presisten
+//# cara kerja ketika EBS storage djalan degan EC2 Instance maka ketika mati data dibackup dan diperbaru degan data terbaru.
+
+//! Amazon Simple Storage (Amazon S3)
+//? layanan yang dapat menyimpan dan mengambil data dalam jumlah tak terbatas pada skala apa pun.
+//? Amazon S3 merupakan object-level storge. object terdiri dari data,metadata dan key
+//? data -> gambar, file, video dll, metadata -> apa informasi di dlm data dan key adalah pengenal uik dari sebuah data
+
+//~ Storage Class 
+//? S3 Standart data disimpan 11 sembilan persen tetap utuh dlm satu tahun. class ini dapat menghosting web statis.
+//? S3 Standard-Infrequent Access (S3 Standard-IA) ; class untuk menyimpan backup dan penyimpanan dlam jangka panjang
+//? S3 One Zone-Infrequent Access (S3 One Zone-IA) ; bedanya untuk menghemat penyimpanan data dan hanya di avalibilty zone.
+//? S3 Intelligent-Tiering ; memindahkan secara otomatis jika tidak menggunkan objec selama 30 hari ke S3 Standarti IA
+//? S3 Glacier ; biasanya digunakan untuk menyimpan data audit dengan jangka panjang
+
+//! Amazon Elastic File System (Amazon EFS)
+//? sistem file terkelola yang bisa diskalakan dan dapat digunakan oleh layanan AWS Cloud dan sumber daya di data center on-premise.
+//? EFS juga memungkinkan beberapa instance untuk melakukan proses read (membaca) dan write (menulis) data darinya pada saat bersamaan.
+//? Setiap EC2 instance yang berada di Region yang sama dapat menyimpan data ke sistem file Amazon EFS.
+
+//! Amazon Relational Database Service (Amazon RDS)
+//? layanan yang menjalankan mesin database management system (RDBMS); amazon aurora, postgreSQL, MySQL, dll
+//? kita dapat bermigrasi dari on-premise (data center lokal) ke AWS EC2
+
+//! Amazon DynamoDB
+//? hampir sama dengan Amazon RDSm bedanya DynamoDB Database non-reasoninal (non-sql) dan dijalankan database serverless (tanpa server)
+//? yaitu sekema dalam stiap table tidak mesti sama
+
+//! Amazon Redshift
+//? layanan data warehousing yang dapat Anda gunakan untuk analitik big data. 
+//? data warehouse adalah data yang tidak realtime atau data yang digunakan pada waktu tertentu
+
+//! AWS Database Migration Service
+//? layanan proses migrasi database ke AWS
+//? migrasi homogen: proses migrasi yang bertipe sama sperti skema, struktur dll (homogenous database migration)
+//? migratsi heterogeneous : proses migratasi bertipe yang tidak sama, kita menggunakan tool schema convertion tool
+
+//! Layanan Database Tambahan
+//? Amazon DocumentDB ;layanan yang dapat membantu Anda untuk menangani manajemen konten, katalog, ataupun profil pengguna.
+//? Amazon Neptune ; layanan graph database (database grafik) yang berguna untuk membuat dan menjalankan aplikasi  dengan kumpulan data yang sangat terhubung, seperti social networking (jejaring sosial), recommendation engines  (mesin pemberi rekomendasi), fraud detection (sistem pendeteksi penipuan), dan knowledge graph (grafik pengetahuan: kumpulan deskripsi yang saling terkait dari entitas)
+//? Amazon Managed Blockchain ; sistem ledger (kumpulan catatan riwayat aktivitas) terdistribusi yang memungkinkan banyak pihak menjalankan transaksi dan berbagi data tanpa otoritas pusat.
+//? Amazon Quantum Ledger Database (Amazon QLDB) ; sistem pencatatan yang immutable di mana entri apa pun tidak akan pernah bisa dihapus dari audit
+
+//~ Akaselator Database 
+//? Amazon ElastiCache : menambah lapisan cache pada db, yang bsa meningkatkan read time wakty baca.
+//? Amazon DynamoDB Accelerator (DAX) : meningkatkan waktu baca pada db nonreasonial 
+
+/// -------------------------------------------------------------------------------------------------------------------------------
+
