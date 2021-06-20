@@ -309,3 +309,30 @@
 //~ Amazon Inspector
 //? layanan yang membantu untuk melengkapi pemahaman kita untuk meningkatkan keamanan dan compliance/kepatuhan aplikasi dengan menjalankan penilaian keamanan secara otomatis terhadap infrastruktur.
 //~ Amazon GuardDuty
+
+/// -------------------------------------------------------------------------------------------------------------------------------
+
+//@ PEMANTAUAN DAN ANALITIK
+//! Amazon CloudWatch
+//? layanan yang dapt memantau infrastruktur dan aplikasi yang Anda jalankan di AWS secara real time
+//? dengan cara melacak dan memantau metrik, metrik adalah variabel yang terkait dgn sumbery daya ( penggunaan EC2 dan CPU)
+//~ Manfaat menggunakan Amazon CloudWatch
+//? Akses ke semua metrik dari satu lokasi
+//? Visibilitas ke seluruh aplikasi, infrastruktur, dan layanan
+//? Mengurangi waktu MTTR dan mengurangi TCO
+//? Mengoptimalkan aplikasi dan sumber daya operasional
+
+//! AWS CloudTrail
+//? layanan audit API yang komprehensif. Dengan CloudTrail, Anda dapat melihat riwayat lengkap dari aktivitas pengguna dan panggilan API untuk aplikasi maupun sumber daya.
+//? bisa dibilang log dari semua catatab sumber daya AWS
+
+//! AWS Trusted Advisor
+//? layanan web yang memeriksa lingkungan AWS Anda dan memberikan rekomendasi secara real time sesuai dengan praktik terbaik AWS.
+//~ AWS Trusted Dashboard dan Contoh Alert
+//? Cost Optimazion(pengoptimalan biaya) ; EBS volume yang tidak dimanfaatkan. maka kita bsa scalling
+//? Performance (performa) ; pengiriman konten untuk Amazon CloudFront yang tidak teroptimasi.
+//? Security (keamanan) ; password IAM User lemah
+//? Fault Tolerance (toleransi dari kesalahan) ; misalny tidak ada backup
+//? Service Limits (batasan layanan) ; misal limit dari kepemilikan VPC per Region adalah 5.
+
+/// -------------------------------------------------------------------------------------------------------------------------------
