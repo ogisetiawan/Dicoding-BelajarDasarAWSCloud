@@ -336,3 +336,42 @@
 //? Service Limits (batasan layanan) ; misal limit dari kepemilikan VPC per Region adalah 5.
 
 /// -------------------------------------------------------------------------------------------------------------------------------
+
+//@ HARGA DAN DUKUNGAN
+//? sebuah perencanaan dari harga beberapa layanan AWS
+//! AWS Free Tier
+//? beberapa layanan AWS secara gratis, terdapat 3 jenis
+//~ Always free ; Contohnya adalah AWS Lambda yang merupakan layanan komputasi serverless alias tanpa server
+//~ 12 months free ; layanan gratis sampai 12 bulan
+//~ Trials ; beberapa layanan gratis
+
+//! Konsep Harga AWS
+//? Pay for what you use ; Bayar sesuai yang Anda gunakan
+//? Pay less when you reserve; opsi reservasi yang memberikan diskon signifikan daripada harga instance dengan opsi penagihan On-Demand
+//? Pay less with volume-based discounts when you use more;  Bayar lebih murah dengan diskon berbasis volume saat Anda menggunakan lebih sering
+//~ AWS Pricing Calculator
+//? Layanan estimasi biaya untuk kasus penggunaan di AWS
+//? manfaatnya ; Memodelkan arsitektur yang diinginkan sebelum membangunnya, Menelusuri setiap harga sekaligus membuat perhitungan 
+
+//! Billing Dashboard
+//? layanan yang dapat Anda gunakan untuk melihat informasi penagihan, membayar tagihan AWS, memantau penggunaan, menganalisis, dan mengontrol biaya.
+
+//! Consolidated Billing
+//? fitur yang memungkinkan Anda untuk mendapatkan satu tagihan untuk semua akun AWS yang ada di organisasi.
+//? jika memiliki 100 akun AWS, Anda tak akan mendapatkan 100 tagihan, melainkan hanya satu tagihan terpusat. 
+
+//! AWS Budgets
+//? memastikan bahwa uang yang dikeluarkan tidak akan melebihi anggaran
+
+//! AWS Cost Explorer
+//? layanan berbasis konsol yang dapat meninjau dan menganalisis secara visual pengeluaran Anda di AWS.
+//? dikelompokkan berdasarkan beberapa atribut: layanan, AWS Regions, tipe instance, tag
+
+//! AWS Support Plans
+//~ AWS Basic Support ; paket AWS Basic Support tanpa biaya sama sekali seperti, Akses 24/7 ke customer service dll
+//~ AWS Developer Support; misal sudah sedikit kenal dengan beberapa layanan, namun tak cukup yakin bagaimana cara penggunaannya untuk memenuhi kebutuha
+//~ AWS Business Support ; digunakan jika sudah mulai menerapkan beban kerja produksi
+//~ AWS Enterprise Support ; perusahaan yang menjalankan beban kerja penting
+
+//! AWS Marketplace
+//? katalog digital pilihan yang memiliki ribuan perangkat lunak dari berbagai vendor.
