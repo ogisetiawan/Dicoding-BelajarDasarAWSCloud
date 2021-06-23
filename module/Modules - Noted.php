@@ -3,7 +3,7 @@
  * @Author: ogi.setiawan 
  * @Date: 2021-06-12 21:26:07 
  * @Last Modified by: ogi.setiawan
- * @Last Modified time: 2021-06-12 21:52:22
+ * @Last Modified time: 2021-06-23 21:35:10
  */
 
 //@ PENGANTAR AMAZON WEB SERVICE
@@ -375,3 +375,42 @@
 
 //! AWS Marketplace
 //? katalog digital pilihan yang memiliki ribuan perangkat lunak dari berbagai vendor.
+
+/// -------------------------------------------------------------------------------------------------------------------------------
+
+//@ MIGRASI DAN INOVASI
+//! AWS Cloud Adoption Framework (AWS CAF)
+//? berfungsi untuk memberikan Anda panduan agar proses migrasi ke AWS menjadi lebih cepat dan lancar
+//~ 6 perspektif pandual dlm AWS CAF
+//? Bussiness ; memisahkan antara bisnis dan IT menjadi model bisnis yang mengintegrasikan strategi IT. (manajer bisnis)
+//? People ; mempersiapkan tim dengan memperbarui skill staf dan proses organisasi untuk migrasi cloud
+//? Governance ; untuk memahami cara pembaruan keterampilan staf dan proses yang diperlukan untuk memastikan Business Governance (Tata kelola Bisnis) di cloud. (CIO)
+//? Platform ; membantu Anda untuk merancang, menerapkan, dan mengoptimalkan arsitektur teknologi AWS berdasarkan sasaran bisnis
+//? Security  ; tujuan keamanan untuk visibilitas, kemampuan audit, kontrol, dan ketangkasan (agility).
+//? Operations ; membantu Anda dalam mengaktifkan, menjalankan, menggunakan, mengoperasikan, dan memulihkan beban kerja IT ke tingkat yang disepakati dengan business stakeholder (pemangku kepentingan bisnis) 
+
+//! Strategi Migrasi
+//? opsi strategi migrasi di antara 6 R yang paling sesuai menurut waktu;
+//? Rehosting; Opsi ini mudah dilakukan karena Anda tak perlu membuat perubahan apa pun
+//? Replatforming; disebut juga dengan lift, tinker, and shift (angkat, perbaiki, dan pindahkan) dan tak akan mengubah arsitektur inti (core architecture)
+//? Retiring; AWS menemukan bahwa sebanyak 10% hingga 20% dari portofolio IT perusahaan menyertakan aplikasi yang tak lagi digunakan dan bisa dimatikan
+//? Retaining; memigrasikan aplikasi yng ingin dihentikan tapi masih dipakai dlam waktu dekat
+//? Repurchasing; memperbarui vendor pada aplikasi 
+//? Refactoring/re-architecting; menulis kode yang baru, karena perubahan drmatis pada cloud dari pada on-premise
+
+//! AWS Snow Family
+//? kumpulan perangkat fisik yang dapat membantu Anda untuk memindahkan data sampai dengan ukuran exabyte ke dalam dan keluar AWS.
+//~ Perangkat AWS Migrasi
+//? AWS Snowcone; perangkat biasanya ukuran 8tb, memory 4gb
+//? AWS Snowball; Snowball Edge Storage Optimized dan Snowball Edge Compute Optimized
+//? AWS Snowmobile; perangkat yang menggunkan truck container biasanya berukuran 100PB
+
+//! Inovasi dengan AWS
+//? Serverless applications; aplikasi tanpa server 
+//? Artificial Intelligence; Amazon Transcribe yang dapt mengubah ucapan menjadi teks
+//? Machine learning; AWS DeepRacer simulator balap 3D yang terhubung dgn cloud
+//? AWS Ground Station; kita bsa punya satelit sendiri
+
+/// -------------------------------------------------------------------------------------------------------------------------------
+
+
