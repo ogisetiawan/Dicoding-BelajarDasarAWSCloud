@@ -3,7 +3,7 @@
  * @Author: ogi.setiawan 
  * @Date: 2021-06-12 21:26:07 
  * @Last Modified by: ogi.setiawan
- * @Last Modified time: 2021-06-23 21:35:10
+ * @Last Modified time: 2021-06-23 21:49:34
  */
 
 //@ PENGANTAR AMAZON WEB SERVICE
@@ -413,4 +413,24 @@
 
 /// -------------------------------------------------------------------------------------------------------------------------------
 
+//@ PERJALANAN CLOUD [ ARSITEKTUR AWS ]
+//? AWS menghadirkan alat yang dapat membantu Anda untuk membuat arsitektur terbaik, yaitu AWS Well-Architected Framework
+//? AWS Well-Architected Framework; layanan untuk mengevaluasi arsitektur yang Anda bangun terhadap keunggulan pada beberapa kategori atau disebut dengan pilar, di antaranya:
 
+//! AWS Well-Architected Framework
+//? 5 pilar AWS Well-Architected Framework;
+//~ Operational Excellence; untuk menjalankan dan memantau sistem guna memberikan nilai bisnis serta terus meningkatkan proses dan prosedur
+//? Misalnya, melakukan operation as code (operasi sebagai kode), membuat anotasi dokumentasi, mengantisipasi kegagalan, dan sering memperbaiki prosedur operasi.
+//~ Security ; memberikan nilai bisnis melalui risk assessment (penilaian risiko) dan strategi mitigasi.
+//~ Reliability; untuk memastikan beban kerja melakukan fungsi yang diinginkan dengan benar dan konsisten sesuai harapan
+//~ Performance Efficiency; pada penggunaan sumber daya IT dan komputasi secara efisien untuk memenuhi kebutuhan.
+//~ Cost Optimization; untuk mengontrol ke mana uang dibelanjakan guna menghindari biaya yang tak perlu.
+//~ AWS Well-Architected Tool; layanan ini akan menghasilkan laporan dan menunjukkan area mana saja yang harus Anda tangani.
+
+//! Manfaat dari AWS Cloud
+//? Ubah pengeluaran di muka menjadi pengeluaran variabel; jadi ga perlu pikirin perangkat keras di data center lokal.  
+//? Manfaatkan skala ekonomi yang masif
+//? Berhenti menebak kapasitas; ketika kita bkin data center lokal kita ga asal mikir perlu brp kapasitasnya di aws kita bsa gunakan scalling
+//? Tingkatkan kecepatan dan ketangkasan; contohnya kaya mau buat server, jadi ga perlu install lagi, kita tgl buat aja di server cloud
+//? Hentikan biaya pengelolaan dan pemeliharaan data center
+//? Mendunia dalam hitungan menit
